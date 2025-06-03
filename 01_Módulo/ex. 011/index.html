@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Tente abrir a imagens em despositivos diferentes</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/pequena.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/media.png" type="image/png"> <!--Usando a taG source media type você pode fazer com que outra imagem menor seja carregada dependendo do tamanho da pagina,com *(Max-width resolucao) e srcset="você coloca a imagem menor no caso do exercicio a media e pequena"-->
+        <img src="imagens/grande.png" alt="Imagem flexível">
+        <h2>Audio na merda da pagina</h2>
+        <p>bora colocar essa merda em HTML</p>
+        <audio preload="auto" controls autoplay loop>
+            <source src="media/02. BARQUINHA DE OURO PIRIRIPS.mp3" type="audio/mpeg"> <!--No material tem varios formatos de midia type-->
+
+
+        </audio>
+        <p>Seu navegar não consegue abrir esse caraio clique <a href="media/02. BARQUINHA DE OURO PIRIRIPS.mp3" download="02. BARQUINHA DE OURO PIRIRIPS.mp3" type="apllication/mp3" target="_blank">aqui</a> para baixar</p>
+
+        <!--https://www.pexels.com/pt-br/ site para videos alem disso você pode usar o programa rendbrack https://handbrake.fr/rotation.php?file=HandBrake-1.9.2-x86_64-Win_GUI.exe para conversao de videos-->
+
+    </picture>
+</body>
+</html>

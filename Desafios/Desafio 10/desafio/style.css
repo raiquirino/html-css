@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+body {
+    background-color: #84E1AD;
+}
+header {
+    background-image: linear-gradient(to top, #0f3520, #3DDB84);
+    text-align: center;
+    margin: auto 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: white;
+}
+main {
+    width: 60%;
+    height: auto;
+    margin-top: 0; /* Remove margem superior */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto; /* Define uma margem inferior */
+    background-color: white;
+}
+nav {
+    text-align: left;
+    padding: 3px;
+    color: white;
+
+}
+nav > a {
+    color: white;
+    text-decoration: none
+}
+nav >a:hover {
+    text-decoration: none;
+    font-size: 28px;
+}
+h2 {
+    color: #1A5C38;
+    font-weight: bold;
+    font-family: idroid;
+    margin: 10px;
+    padding: 10px;
+    }
+p {
+    padding: 10px;
+    margin: 20;
+}
+img {
+    display: block;
+    margin: auto;
+}
+video > iframe {
+    display: block;
+    height: 600px;
+    width: 100%; /* Faz o iframe ocupar toda a largura disponível */
+    margin-top: 0; /* Remove margem superior */
+    margin-bottom: 0; /* Define uma margem inferior */
+}
+footer {
+    text-align: center;
+    background-color:#1A5C38;
+    color: white;
+    margin: 0 auto auto auto;
+}
+.container {
+    display: flex;
+    gap: 30px; /* Espaço entre as linhsa*/
+}
+ol {
+    flex: 1;
+    list-style-position: 1; /* Faz as liscas ocuparem um espaço igual*/
+    list-style-type: '✔ ';
+ }
+ .fundo1 {
+    background-color: #1A5C38;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+    margin: 20px 20px 0px 20px; /* Remove margem inferior */
+    color: white;
+ }
+ .fundo2 {
+    background-color: #C5EBD6;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin: 0px 20px 20px 20px; /* Remove margem superior */
+ }

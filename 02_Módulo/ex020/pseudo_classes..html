@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+</head>
+    <style>
+            div > p {
+                display: none;
+            }
+            div:hover > p {
+                display: block;
+                color: rgb(71, 32, 211);
+                text-align: center;
+               
+            }
+        div {
+            display: inline-block;
+            background-color: rgb(179, 217, 243);
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+        div:hover { /* a pseudo classe aplica efeitos a uma div como por exemplo ao passar o mouse ela ficará amarela*/
+            background-color: rgb(245, 238, 177);
+        }
+
+    </style>
+<body>
+    <div id="d1">01 <p>Você que é foda!</p></div>
+    <div id="d2">02 <p>Ai dento...</p></div>
+    <div id="d3">03 <p>Lá ele.</p></div>
+    
+</body>
+</html>

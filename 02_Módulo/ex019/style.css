@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(162, 208, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: blue;
+}
+/*
+    |   em HTML ID = CSS #      |
+    |   em HTML Class = CSS .   |
+*/
+h1#principal{ /*Seletor personalizado*/
+    text-align: center;
+    background-color: red;
+    width: 600px;
+    color: white;
+}
+.basico { /*sem colocar o elemento tudo que for basico vai pegar a formatação*/
+    color: blueviolet;
+    font-weight: 900;
+}
+.destaque {
+    background-color: blanchedalmond;
+
+}
+h2 {
+    color: rgb(208, 231, 75);
+}
+

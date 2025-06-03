@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:#042830;
+            margin: 10px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 0px 0%;/* Raio da borda, também é possivel colcoar borda diferente para cada lado da caixa*/
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px 6px 10px 10px;/* Raio da borda, também é possivel colcoar borda diferente para cada lado da caixa*/
+        }
+        nav {
+            background-color: black;
+            padding: 3px;
+            box-shadow: 2px 2px 2px 0.5px black; 
+            /* 
+            1px     ->      Deslocamento Orizontal 
+            2px     ->      Deslocamento Vertical
+            3px     ->      Espalhamento
+            black   ->      Cor
+            */
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight:  bold;
+            padding: 3px;
+        }
+        nav >a:hover {
+            background-color: white;
+            color: black;
+        }
+        article {
+            background-color: white;
+            padding: 5px;
+            text-align: justify;
+        }
+        article > aside {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        footer {
+            color: white;
+            padding: 100px;
+        }
+        footer > p {
+            margin: 0px; /* Foi feito assim dentro do filho pois usando diretamente no footer ele considera uma magin automatica de 16px*/
+            text-align: center;
+            font-size: 10px;
+            margin: 10px;
+        }
+        .articleh2 {
+            font-weight: bolder;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Exercício nº 20</h1>
+    <nav>
+        <a href="#">Menu</a>
+        <a href="#">Programas</a>
+        <a href="#">Planilhas</a>
+        <a href="#">Download</a>
+        <a href="#">Sair</a>
+    </header>
+    </nav>
+    <main>
+        <section id="Assundtos">
+            <h2>Tecnologia</h2>
+            <p>Exemplo de página</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                <h2 class="articleh2">O que aprendemos hoje</h2>
+                <p class="articleh2">Aqui aprendemos com o Grouping Tags criar a estrura básica de site com Titulo Menu e conteudo usando tags semanticas ao inves de usar apenas Divs, usandos tags do tilo</p>
+                <ul>
+                    <li>Header cabeçalho da pagina</li>
+                    <li>Nav para o menu de navegação</li>
+                    <li>Main como o corpo do conteúdo</li>
+                    <li>Section usamos para criar seçoes</li>
+                    <li>Article usado para criar um artigo</li>
+                    <li>Aside para colocar o nome do dono do texto</li>
+                    <li>footer este é o rodapé da pagina</li>
+                </ul>
+                <p>O menu não está funcional</p>
+                <aside>
+                    <p>Artigo Escrito por José da Silva</p>
+                </aside>
+            </article>
+
+        </section>
+
+    </main>
+    <div 
+    id="bola">
+    </div>
+    <footer>
+        <p>Desenvolvido por Raí Solutions</p>
+    </footer>
+</body>
+</html>

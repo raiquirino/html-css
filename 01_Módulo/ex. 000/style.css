@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+main {
+    background: white;
+    text-align:justify;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    width: 800px;
+
+
+}
+body {
+    background-image: linear-gradient(to right,#000000 10%,#0f0101 20%,#BE0417 70%);
+}
+h1 {
+    text-align: center;
+    color: rgb(189, 2, 2);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size:26;
+}
+h2 {
+    text-align: center;
+    color: rgb(141, 7, 7);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+p {
+    color: #520707;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    
+}
