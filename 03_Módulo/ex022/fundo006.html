@@ -9,17 +9,33 @@
 <style>
     body {
         height: 100vh;
-        background-color: black;
+        background-size: cover;
+        /*background-color: black;
         background-image: url("imagens/wallpaper002.jpg");
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover; /*Cobre 100% da tela mesmo que tenha que picotar, "cortar" o content também serve para mostrar em 100% da tela porém não corta */
-
+        */
+        /*
+        Cobre 100% da tela mesmo que tenha que picotar, "cortar" o content também serve para mostrar em 100% da tela porém não corta 
+        */
+        /* Usado para definir se a imagem de fundo de um elemento permanecerá fixa ou movel.
+        ✻ Scroll (Padrão): imagem de fundo rola junto com o conteúdo da página.
+        ✻ fixed: Imagem de fundo fica fixa em relação ao viewport e não se move a página
+        ✻ local: a imagem de fundo rola junto com conteúdo do próprio elemento, em vez de seguir o viewport.
+        Muito combinado com o <<<background-size: cover;>>>
+        */
+        
+        /*
+        Shorthand - backgroud
+        ordem certa de usar o shorthand
+        color > image > position > repeat > attachment
+        */        
+        background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
     }
 
     main {
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 10px;
         margin: auto;
         border: 1px solid blue;
@@ -34,7 +50,18 @@
             Teste de imagem de fundo
         </h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut provident vel cum quia accusantium repudiandae libero. Quaerat eveniet aliquam alias eos recusandae voluptatem, officia totam tenetur dolorum nobis nulla!lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati totam voluptatem, quaerat amet facilis ad repellendus ipsa, maxime eius dolorem dolores, est eos neque veniam sed illum similique at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi amet officia voluptas consectetur possimus nemo esse facere quasi perferendis odio laudantium, eos quae maiores nesciunt iure quod architecto cumque.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut provident vel cum quia accusantium repudiandae libero. Quaerat eveniet aliquam alias eos recusandae voluptatem, officia totam tenetur dolorum nobis nulla!lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati totam voluptatem, quaerat amet facilis ad repellendus ipsa, maxime eius dolorem dolores, est eos neque veniam sed illum similique at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi amet officia voluptas consectetur possimus nemo esse facere quasi perferendis odio laudantium, eos quae maiores nesciunt iure quod architecto cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit deserunt, ipsum voluptas officiis quis, doloremque pariatur nulla ab dignissimos harum a! Laudantium tenetur est ut libero? Nesciunt vero quaerat blanditiis.
+            
+        </p>
+
+                <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut provident vel cum quia accusantium repudiandae libero. Quaerat eveniet aliquam alias eos recusandae voluptatem, officia totam tenetur dolorum nobis nulla!lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati totam voluptatem, quaerat amet facilis ad repellendus ipsa, maxime eius dolorem dolores, est eos neque veniam sed illum similique at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi amet officia voluptas consectetur possimus nemo esse facere quasi perferendis odio laudantium, eos quae maiores nesciunt iure quod architecto cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit deserunt, ipsum voluptas officiis quis, doloremque pariatur nulla ab dignissimos harum a! Laudantium tenetur est ut libero? Nesciunt vero quaerat blanditiis.
+            
+        </p>
+
+                <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut provident vel cum quia accusantium repudiandae libero. Quaerat eveniet aliquam alias eos recusandae voluptatem, officia totam tenetur dolorum nobis nulla!lo Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus obcaecati totam voluptatem, quaerat amet facilis ad repellendus ipsa, maxime eius dolorem dolores, est eos neque veniam sed illum similique at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eligendi amet officia voluptas consectetur possimus nemo esse facere quasi perferendis odio laudantium, eos quae maiores nesciunt iure quod architecto cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit deserunt, ipsum voluptas officiis quis, doloremque pariatur nulla ab dignissimos harum a! Laudantium tenetur est ut libero? Nesciunt vero quaerat blanditiis.
+            
         </p>
     </main>
 </body>
