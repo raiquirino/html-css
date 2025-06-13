@@ -7,3 +7,5 @@ pasta de estudo: https://raiquirino.github.io/html-css/
 Links pra modulos https://raiquirino.github.io/html-css/02_módulo/ex022
 
 Desafio 10: https://raiquirino.github.io/html-css/00_Desafios/desafio_10/index.html
+
+https://raiquirino.github.io/html-css/000_Desafios/desafio_12/index.html
