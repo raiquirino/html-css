@@ -55,11 +55,15 @@ a:hover {
 
 section {
     font-family: var(--font3);
-    font-size: 5vw;
+    font-size: 2vw;
     padding-top: 3.5vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+}
+
+section p {
+    padding-bottom: 2EM;
 }
 
 section.normal {
@@ -76,6 +80,14 @@ section.imagem > P {
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.253);
     padding: 5px;
+}
+
+section#img01 {
+
+}
+
+section#img02 {
+    
 }
 
 footer {
