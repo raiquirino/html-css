@@ -22,6 +22,7 @@ html, body {
     font-family: var(--font1);
     min-height: 100vh;
     background-color: darkgray;
+    position: relative;
 
 }
 
@@ -30,6 +31,9 @@ header {
     background-color: black;
     color: white;
     text-align: center;  
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 
 header > h1 {
