@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--
+    • required = Obrigatório a digitação.
+    • maxlength = Máximo de caracteres.
+    • placeholder = Dica.
+    • autocomplete = Completar o nome automáticamente.
+    • input:submit = botão de enviar
+    • input:resete = limpar dados
+    • input:numeros = aceita apenas numeros
+    • step = passo 0.5 0,5
+    • value = Atribue um valor no caso dá media pode por um padrão
+    -->
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" >
+        <p>
+            <label for="inome">nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" minlength="5" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imes">Período letivo</label>
+            <input type="month" name="Mês" id="inome" placeholder="Digite o período">
+        </p>
+
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" min="0" max="10" placeholder="0 a 10" step=".1" required>
+        </p>
+
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="Dia" id="idia">
+        </p>
+
+        <label for="idia">Hora da prova</label>
+        <input type="time" name="Hora" id="idia">
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
