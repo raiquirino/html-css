@@ -7,13 +7,26 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
             <label for="icor">Cor:</label>
-            <input type="color" name="Cor" id="icor">
+            <input type="color" name="Cor" id="icor" value="#00ff00">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de satisfação</label><br>
+            <input type="range" name="nivel" id="inivel" min="1" max="5" value="0">
+        </p>
+
+        <p>
+            <label for="ifoto">Foto de perfil</label><br>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
-    <input type="submit" value="Enviar">
-    <input type="reset" value="Limpar">
 </body>
 </html>
