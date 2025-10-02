@@ -11,9 +11,18 @@
 
 </style>
 <body>
-    <h1>Meu primeiro formulário</h1>
+    <h1>Meu primeiro formulário Com metódo "POST"</h1>
+    
+    <!--
+    Por padrão, vem com o método GET, mas também existe o método POST, cada um com finalidades distintas.
 
-    <form action="cadastro.php" autocomplete="off">
+    - GET: É usado principalmente para recuperar dados do servidor. As informações são enviadas pela URL, o que torna esse método mais rápido, porém menos seguro para dados sensíveis. Exemplo: acessar uma página ou buscar informações.
+
+    - POST: Serve para enviar dados ao servidor, como em formulários de login ou cadastro. Os dados são transmitidos no corpo da requisição, oferecendo mais segurança e permitindo o envio de informações maiores e mais complexas, porém caso o usuário busque com inspencionar ele consegue ter acesso aos dados.
+
+    no futuro estudar https: pra segurança dos dados
+    -->
+    <form action="cadastro.php" method="POST"  autocomplete="off">
         <p>
             <label for="inome">
                 Nome:
@@ -27,6 +36,12 @@
             <input type="text" name="sobrenome" id="isobrenome"></p>
 
         <p><input type="submit" value="Enviar"></p>
+    </form>
+    <h1>Login com metodo "GET"</h1>
+    <form action="cadastro.php" method="GET" autocomplete="off">
+        <p><label for="isenha">Usuário:</label> <input type="text" name="Usuario" id="iusuario"></p>
+        <p><label for="">Senha:</label> <input type="text" name="senha" id="isenha"></p>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>
