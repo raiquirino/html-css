@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<!--
+    • O label dentro o optgruoup é um atributo já o label fora envelopando o estado é um elemento
+    • Elemento é a estrutura principal de um documento HTML. Exemplo: <select>, <option>, <div>, <p>. Ele define o tipo de conteúdo ou comportamento.
+    • Atributo é uma característica ou configuração aplicada a um elemento. Exemplo: value, selected, id, class. Ele modifica ou complementa o comportamento do elemento.
+
+    • selected = ja vem com o estado pre selecionado
+
+    • datalist = cria uma lista pre selecionada semelhante ao que fizemos com o option que dá a possibilidade de digitar algo que não está na lista
+
+    output
+-->
+<body>
+    <h1>Exempo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="iest">Estado:</label>
+        <select name="estado" id="iest">
+            <option selected>--------Escolha--------</option>
+            <optgroup label="Região Norte">
+            <option value="AC">Acre</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="PA">Pará</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="TO">Tocantins</option>
+            </optgroup>
+
+            <optgroup label="Região Nordeste">
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="MA">Maranhão</option>
+            <option value="PB">Paraíba</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="SE">Sergipe</option>
+            </optgroup>
+
+            <optgroup label="Região Centro-Oeste">
+            <option value="DF">Distrito Federal</option>
+            <option value="GO">Goiás</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+
+            <optgroup label="Região Sudeste">
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+            </optgroup>
+
+            <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>
+    </p>
+
+    <p>
+        <label for="iprof">Profissão</label></p>
+        <input type="text" name="prof" id="iprof" list="ilistprof">
+
+        <datalist id="ilistprof">
+            <option>Administrador</option>
+            <option>Engenheiro</option>
+            <option>Desenvolvedor de Software</option>
+            <option>Médico</option>
+            <option>Contador</option>
+            <option>Advogado</option>
+            <option>Professor</option>
+            <option>Profissional de Marketing</option>
+            <option>Analista Financeiro</option>
+            <option>Vendedor</option>
+        </datalist>
+        
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+    
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form>
+</body>
+</html>
