@@ -7,9 +7,22 @@
 </head>
 <style>
 
+
     body {
-        background: url(fundo\ form010.jpg) no-repeat;
+        background-image: linear-gradient( black,gray);
+
+
     }
+    
+
+    main {
+        background: url('fundo form010.jpg') no-repeat;
+        width: 740px;
+        height: 516px;
+        margin: 0 auto;
+        display: block;
+}
+
 
     h1 {
         padding-left: 10px;
@@ -52,31 +65,29 @@
     }
 </style>
 <body>
-    <h1>Calcule sua idade</h1>
-
-    <form action="cadastro.php">
-
-
-        <fieldset>
-            <p>
-                <label for="iano" id="lbidade">Digite o ano do seu nascimento:</label>
-                <input type="number" name="ano" id="iano" min="1930" max="2025" oninput="calcidade()">
+    <main>
+        <h1>Calcule sua idade</h1>
+        <form action="cadastro.php">
+            <fieldset>
+                <p>
+                    <label for="iano" id="lbidade">Digite o ano do seu nascimento:</label>
+                    <input type="number" name="ano" id="iano" min="1930" max="2025" oninput="calcidade()">
+                </p>
+                <label for="iidade" id="lbidade">Sua idade é:</label>
+                <output name="idade" id="iidade">0</output>
+            </fieldset>
+            <p id="acao">
+                <input type="submit" value="Enviar" id="botao">
+                <input type="reset" value="Limpar" id="botao">
             </p>
-            <label for="iidade" id="lbidade">Sua idade é:</label>
-            <output name="idade" id="iidade">0</output>
-        </fieldset>
-
-        <p id="acao">
-            <input type="submit" value="Enviar" id="botao">
-            <input type="reset" value="Limpar" id="botao">
-        </p>
-    </form>
-<script>
-    function calcidade(){
-        let atual = new Date().getFullYear()
-        iidade.innerHTML = Number(atual) - Number(iano.value)
-    }
-</script>
-    
+        </form>
+        <script>
+        function calcidade(){
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+        </script>
+        
+    </main>
 </body>
 </html>
