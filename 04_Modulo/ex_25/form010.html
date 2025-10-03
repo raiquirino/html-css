@@ -7,6 +7,10 @@
 </head>
 <style>
 
+    body {
+        background: url(fundo\ form010.jpg) no-repeat;
+    }
+
     h1 {
         padding-left: 10px;
     }
@@ -16,7 +20,7 @@
         height: 50%;
         border: 2px solid black;
         margin: 10px;
-        background-color: rgba(211, 211, 211, 0.400);
+        background-color:white;
     }
     input {
         border: 2px solid black;
@@ -34,7 +38,7 @@
         color: white;
     }
 
-    #lbidade, #iidade {
+    #lbidade, #iidade h1 {
         font-weight: bolder;
     }
 
@@ -55,7 +59,7 @@
 
         <fieldset>
             <p>
-                <label for="iano">Digite o ano do seu nascimento:</label>
+                <label for="iano" id="lbidade">Digite o ano do seu nascimento:</label>
                 <input type="number" name="ano" id="iano" min="1930" max="2025" oninput="calcidade()">
             </p>
             <label for="iidade" id="lbidade">Sua idade é:</label>
