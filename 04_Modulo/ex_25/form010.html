@@ -11,13 +11,15 @@
     <form action="cadastro.php">
 
 
-        <p>
-            <label for="iano">Em que ano você nasceu</label>
-            <input type="number" name="ano" id="iano" min="1930" max="2025" oninput="calcidade()">
-        </p>
-
-        <label for="iidade">Sua idade é:</label>
-        <output name="idade" id="iidade">0</output>
+        <fieldset>
+            <legend>Cálculo de no de nascimento</legend>
+            <p>
+                <label for="iano">Em que ano você nasceu</label>
+                <input type="number" name="ano" id="iano" min="1930" max="2025" oninput="calcidade()">
+            </p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade">0</output>
+        </fieldset>
 
         <p>
             <input type="submit" value="Enviar">
