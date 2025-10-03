@@ -9,20 +9,27 @@
 
 
     body {
-        background-color: rgba(207, 205, 165, 0.327);
+        background-image: linear-gradient(hsl(44, 51%, 66%) #FEFCED);
+
     }
 
     h1 {
     margin: 0;
     text-align: center;
+    font-weight: bolder;
+    text-shadow: 3px 3px 10px rgb(215, 211, 211);
+
     }
  
     main {
         background: url('fundo form010.jpg') no-repeat;
-        width: 700px;
-        height: 516px;
+        background-size: cover; /* ajusta a imagem ao tamanho do main */
+        max-width: 700px;
+        width: 100%;
+        height: 516px; /* ou use min-height se quiser garantir altura mínima */
         margin: 0 auto;
         display: block;
+
     }
 
     fieldset {
@@ -63,7 +70,9 @@
 </style>
 <body>
     <main>
+
         <h1>Calcule sua idade</h1>
+
         <form action="cadastro.php">
             <fieldset>
                 <p>
