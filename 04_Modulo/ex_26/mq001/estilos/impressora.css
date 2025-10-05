@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/* Estilos para impressoras*/
+
+/*
+    •   line-height: 1.5; = Espaçamento entre as linhas
+    •   display: none; = Não será exibido em impressões
+    •   content: ; = Conteúdo exibido em uma TAG
+*/
+
+* {
+    margin: 10px;
+    padding: 10px;
+}
+
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: "Esse artigo foi impresso através do site www.cursoemvide.com";
+}
